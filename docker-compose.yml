@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tokai3_php:
+    build: ./php
+    volumes:
+      - ./project:/var/www/html
+    ports:
+      - 8088:80
